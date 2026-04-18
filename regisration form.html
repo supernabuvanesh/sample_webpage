@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Registration form</title>
+</head>
+
+<body>
+    <h1>Registrtrion Form</h1>
+    <form>
+        <div>
+            <label for="Student name">Student Name<span style="color: brown;">*</span></label>
+            <input type="text" name="student name" id="student name" placeholder="Enter your name" required>
+        </div>&nbsp;
+        <div>
+            <label for="password">password<span style="color: brown;">*</span></label>
+            <input type="password" name="password" id="password" placeholder="Enter your password" required>
+        </div>&nbsp;
+        <div>
+            <label for="email">email<span style="color: brown;">*</span></label>
+            <input type="email" name="email" id="email" placeholder="Enter your email" required>
+        </div>&nbsp;
+        <div>
+            <label for="dob">DOB<span style="color: brown;">*</span></label>
+            <input type="date" name="dob" id="dob" min="2006-05-25" max="2026-04-25" required>
+        </div>&nbsp;
+        <div>
+            <label for="gender">Gender<span style="color: brown;">*</span></label>
+            <input type="radio" name="gender" id="gender" required>Male
+            <input type="radio" name="gender" id="gender" required>Female
+        </div>&nbsp;
+        <div>
+            <label for="language">Language<span style="color: brown;">*</span></label>
+            <input type="checkbox" name="lang[]" id="lang[]">Tamil
+            <input type="checkbox" name="lang[]" id="lang[]">English
+            <input type="checkbox" name="lang[]" id="lang[]" required>Hindi
+        </div>&nbsp;
+        <div>
+            <label for="address">Address<span style="color: brown;">*</span></label>
+            <textarea name="address" id="address" placeholder="enter your address" required></textarea>
+        </div>&nbsp;
+        <div>
+            <label for="degree">Degree<span style="color: brown;">*</span></label>
+            <select name="degree" required>
+                <option value="choose your degree">choose your degree</option>
+                <option value="bcom">Bcom</option>
+                <option value="bba">BBA</option>
+                <option value="bca">BCA</option>
+            </select>
+        </div>&nbsp;
+        <div>
+            <input type="reset" value="Cancel">
+            <input type="submit" value="Register">
+        </div>
+    </form>
+</body>
+
+</html>
